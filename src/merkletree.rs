@@ -253,7 +253,7 @@ impl<S: Storage> MerkleTree<S> {
                     ];
                     let mut empty_nodes = String::new();
                     for mut lr in &mut lr {
-                        if lr == "" {
+                        if lr.is_empty() {
                             let mut count = cnt.borrow_mut();
                             let mut tmp = format!("empty{}", *count);
                             lr = &mut tmp;
