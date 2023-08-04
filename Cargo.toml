@@ -1,6 +1,6 @@
 [package]
 name = "bloock-merkletree-rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = [
     "Marc Baqué <marc@bloock.com>",
@@ -12,7 +12,7 @@ license = "MIT"
 repository = "https://github.com/bloock/bloock-merkletree-rs"
 
 [dependencies]
-bloock-poseidon-rs = "0.1.4"
+bloock-poseidon-rs = "0.1.5"
 async-trait = "0.1.72"
 async-recursion = "1.0.4"
 thiserror = "1.0.44"

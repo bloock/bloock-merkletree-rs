@@ -1,7 +1,7 @@
 use super::error::MerkleError;
 use bloock_poseidon_rs::hash::PoseidonHash;
-use bloock_poseidon_rs::poseidon::{Fr, Poseidon};
-use bloock_poseidon_rs::PrimeField;
+use bloock_poseidon_rs::poseidon::Fr;
+use bloock_poseidon_rs::{PrimeField, POSEIDON};
 use lazy_static::lazy_static;
 use num_bigint::BigUint;
 use num_traits::Num;
@@ -9,7 +9,6 @@ use num_traits::Num;
 const Q_STR: &str = "21888242871839275222246405745257275088548364400416034343698204186575808495617";
 
 lazy_static! {
-    static ref POSEIDON: Poseidon = Poseidon::default();
     static ref Q: BigUint = BigUint::from_str_radix(Q_STR, 10).expect("Failed to parse Q constant");
 }
 

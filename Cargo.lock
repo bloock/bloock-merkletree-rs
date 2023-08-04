@@ -68,7 +68,7 @@ checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
 
 [[package]]
 name = "bloock-merkletree-rs"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "async-recursion",
  "async-trait",
@@ -82,12 +82,13 @@ dependencies = [
 
 [[package]]
 name = "bloock-poseidon-rs"
-version = "0.1.4"
+version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7d8300409ec1c33b5e6cb7efb06d2272c712a4b620259d8e0cc09cb129f4defe"
+checksum = "4f0db7a808c759a7043b9edccef64403ba815bf8ff6461eb8029c173bd0ea1b8"
 dependencies = [
  "ff_ce",
  "hex",
+ "lazy_static",
  "num-bigint",
  "num-traits",
  "rand",
